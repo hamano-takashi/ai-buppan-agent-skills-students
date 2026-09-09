@@ -39,7 +39,7 @@ description: "AI動画・映像制作統括Agent（VIDEO STUDIO）。音楽PV・
 5. 絵コンテ＝画像（MANDATORY・テキストのカット表だけで動画化に進まない）:
    各カットのキーフレームを静止画で生成し、ボード（カットNo/秒数/テロップ/演出を添えた画像一覧）で
    ユーザー確認→採用決定を取る。新規生成カットは複数パターン提案→ユーザー選択。
-   静止画は定額サブスク側（Codex=GPT Image系）で生成し、Higgsfieldクレジットは動画化に温存する。
+   静止画は定額サブスク側（Codex組み込み画像生成、標準対象=Images 2.5）で生成し、Higgsfieldクレジットは動画化に温存する。
    新しい画づくりの最小テスト原則（1枚→判定→量産）はここで適用
 6. 動画化→編集: 採用済みの絵コンテ画像を起点（start_image）にimage-to-video。
    以降は各モードのreferencesの手順どおり
@@ -52,7 +52,7 @@ description: "AI動画・映像制作統括Agent（VIDEO STUDIO）。音楽PV・
 | 用途 | 第一選択 | 備考 |
 |---|---|---|
 | モデル選定 | `models_explore(action:'recommend')` | 迷ったら必ず先に実行。「用途ごとに一番得意なモデル」原則 |
-| 静止画生成・編集 | `generate_image`（Nano Banana Pro/GPT Image系） | キャラ固定は参照画像＋same identity構文 |
+| 静止画生成・編集 | Codex組み込み画像生成（標準対象=Images 2.5）。外部サービスは明示選択時のみ | キャラ固定は参照画像＋same identity構文 |
 | 画像→動画 | `generate_video`（Seedance 2.0/Kling系） | 人物演技はSeedance/Kling。動きは小さく指定 |
 | リップシンク（歌唱） | Kling Avatar（MCP未対応・手動UI操作 2026-07時点） | 事前にDemucsでボーカル分離した音源を使う（伴奏混在は口が引っ張られる） |
 | セリフ吹替 | `dubbing` | 歌唱リップシンクとは別機能 |

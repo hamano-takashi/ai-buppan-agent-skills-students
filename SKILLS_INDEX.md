@@ -56,7 +56,7 @@
 | [fact-check](.agents/skills/fact-check/SKILL.md) | EC事業のファクトチェックAgent。広告表現・LP・商品説明・SNS投稿の 事実確認と根拠検証を実施。景表法・薬機法・ステマ規制に抵触する 不正確な表現を事前に検出し、行政処分リスクを防止する。 「ファクトチェック」「事実確認」「根拠」「エビデンス」「No.1」 「実績」「数字の裏付け」と言及されたときに使用。 |
 | [global-marketing-trends](.agents/skills/global-marketing-trends/SKILL.md) | グローバルマーケティングトレンド統括Agent。世界中の革新的なマーケティング施策を 常時ウォッチし、あらゆる業界・分野に応用可能な形で体系化・提供する。 Breakage収益、ブラインドボックス、開封体験設計、ASMR/サティスファイング、 インフルエンサーシーディング、コミュニティマーケティング、限定ドロップ戦略など 世界最先端の施策を収集・分析・。 |
 | [handoff-protocol](.agents/skills/handoff-protocol/SKILL.md) | 途中の作業を短く記録して安全に再開する。長い作業や担当の切り替えに使う。 |
-| [image-generation](.agents/skills/image-generation/SKILL.md) | 写真、イラスト、バナー、商品画像、背景などの画像生成・画像編集を実行する。image2という指定の有無に関係なく使う。 |
+| [image-generation](.agents/skills/image-generation/SKILL.md) | 写真、イラスト、バナー、商品画像、背景などの画像生成・画像編集を実行する。image2.5やimage2という指定の有無に関係なく使う。 |
 | [international](.agents/skills/international/SKILL.md) | EC事業のグローバル展開統括Agent。海外市場参入・ローカライゼーション・多国籍運営を統括。 グローバル展開による成長加速を目指す。 「海外」「グローバル」「ローカライズ」「越境」「多言語」 「現地法人」と言及されたときに使用。 |
 | [kindle-publishing](.agents/skills/kindle-publishing/SKILL.md) | 出版部署（Kindle出版統括）Agent。「世界一優秀な編集者」として、競合・市場リサーチ→ 空白ポジション企画→素材棚卸し（スキル/Obsidian/文字起こし）→不足分は編集者式インタビューで 著者から引き出し→売れ筋形式での目次設計→章並列執筆→fact-check/legal-check→ 図表・表紙・読者特典→EPUB組版→KDPブラウザ入。 |
 | [lazyweb-design-research](.agents/skills/lazyweb-design-research/SKILL.md) | Research real product UI and landing-page references with Lazyweb MCP or fallback web/browser sources, then turn evidence into implementation-ready design direction. Use when Co。 |

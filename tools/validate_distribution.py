@@ -14,7 +14,7 @@ REQUIRED = {'README.md', 'AGENTS.md', 'CLAUDE.md', 'SKILLS_INDEX.md', 'SECURITY.
             'USAGE.md', 'THIRD_PARTY_NOTICES.md', '.gitignore', '.gitattributes',
             'tools/validate_distribution.py', 'tools/test_validate_distribution.py',
             'docs/START_HERE.md', 'docs/DISTRIBUTION.md', 'docs/RELEASE_REVIEW.md',
-            'docs/VERIFICATION.md', 'templates/project-context.md',
+            'docs/IMAGES_2_5.md', 'docs/VERIFICATION.md', 'templates/project-context.md',
             'templates/image-brief.md', 'templates/worklog.md'}
 ROOT_FILES = {name for name in REQUIRED if '/' not in name} | {MANIFEST}
 SECRET_NAMES = re.compile(r'(^\.env(?:\.|$)|credentials|secret|^id_(rsa|ed25519)|^auth\.json$|\.(pem|key|p12|pfx)$)', re.I)
@@ -172,7 +172,7 @@ def main() -> int:
         return 1
     count = sum(p.endswith('/SKILL.md') for p in hashes)
     if args.write_manifest:
-        payload = {'schema_version': 1, 'release': '1.0.0', 'skill_count': count, 'files': hashes}
+        payload = {'schema_version': 1, 'release': '1.1.0', 'skill_count': count, 'files': hashes}
         (root / MANIFEST).write_text(json.dumps(payload, ensure_ascii=False, indent=2, sort_keys=True) + '\n', encoding='utf-8')
         print('Recorded manifest. This does not replace confidentiality or rights review.')
     print(f'PASS {len(hashes)} files; {count} skills; structure, patterns, metadata and local links checked.')
